@@ -18,13 +18,17 @@ def plot_volume_vs_date(data):
     df['date'] = pd.to_datetime(df['date'])
     df['volume'] = pd.to_numeric(df['volume'])
     
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(20, 6))
     plt.plot(df['date'], df['volume'], marker='o')
-    plt.title('Stock Volume vs Date')
     plt.xlabel('Date')
     plt.ylabel('Volume')
+    plt.title('Stock Volume vs Date')
+    plt.xticks(rotation=45)  
+    plt.tight_layout()
     plt.grid(True)
     plt.show()
+
+
 
 if __name__ == "__main__":
     json_directory = 'json_files'
