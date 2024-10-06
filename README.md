@@ -1,6 +1,8 @@
 # StockStream-Analytics
 Stock Market simulation and data handling using Apache Kafka
 
+![image](https://github.com/user-attachments/assets/4ae92663-427e-435f-a0d9-35ccfcd8884b)
+
 
 
 You must have Kafka installed in your environment. 
